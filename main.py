@@ -59,4 +59,32 @@ class Solution(object):
         #Accepted
         #Runtime ≈ 2183
         #Memory ≈ 12.45
-            
+        
+        #ThirdAttempt
+        # i1=0
+        # while 1:
+        #     i2=i1+1
+        #     for e in nums[i1+1:]:
+        #         if nums[i1]+e == target: return [i1,i2]
+        #         i2+=1
+        #     i1+=1
+        #Accepted 
+        #Runtime ≈ 2191
+        #Memory ≈ 12.38
+        
+        #FourthAttempt (I was helped)
+        # i=0
+        # for e in nums:
+        #     if target-e in nums[1+i:]: 
+        #         return [i,nums[1+i:].index(target-e)+i+1]
+        #     i+=1
+        #Accepted 
+        #Runtime ≈ 280ms
+        #Memory ≈ 12.24
+        
+        #FiveAttempt (Not mine)
+        # h={}
+        # for i,e in enumerate(nums):
+        #     if target-e in h: return [h[target-e],i]
+        #     else:
+        #         h[e]=i
